@@ -40,7 +40,6 @@ class Array
     counter = 0
     until counter == size
       return false if !yield(self[counter])
-
       counter += 1
     end
     true
@@ -50,7 +49,6 @@ class Array
     counter = 0
     until counter == size
       return true if yield(self[counter])
-
       counter += 1
     end
     false
@@ -60,7 +58,6 @@ class Array
     counter = 0
     until counter == size
       return false if yield(self[counter])
-
       counter += 1
     end
     true
@@ -73,7 +70,6 @@ class Array
     num = 0
     until counter == size
       num += 1 if yield(self[counter])
-
       counter += 1
     end
     num
@@ -89,7 +85,6 @@ class Array
     mapped_array
   end
 
-  # |sum, value| sum + value
   def my_inject(initial_value = 0)
     counter = 0
     sum = initial_value
